@@ -176,7 +176,7 @@ a {
 }
 
 .logo-img {
-  height: clamp(64px, 9vw, 84px);
+  height: clamp(72px, 10vw, 92px);
   width: auto;
   display: block;
 }
@@ -722,7 +722,7 @@ a {
   }
 
   .logo-img {
-    height: 62px;
+    height: 68px;
   }
 
   .navbar-cta {
@@ -882,7 +882,7 @@ a {
   }
 
   .logo-img {
-    height: 52px;
+    height: 58px;
   }
 
   .navbar-cta {
