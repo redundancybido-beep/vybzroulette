@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './index.css';
+import logoImg from './assets/vybzroulette-img.jpg';
 
 // --- Icons (Inline SVGs to avoid dependencies) ---
 const CheckCircle = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-magenta"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>;
@@ -14,7 +15,9 @@ const DollarSign = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="n
 const Navbar = () => (
   <nav className="navbar">
     <div className="container">
-      <div className="logo text-gradient">VybzRoulette.</div>
+      <div className="logo">
+        <img src={logoImg} alt="VybzRoulette" className="logo-img" />
+      </div>
       <a href="#pricing" className="btn btn-primary btn-pulse navbar-cta">
         Claim Stage <ArrowRight />
       </a>
@@ -319,7 +322,9 @@ const UrgencyClose = () => {
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <div className="logo text-gradient footer-logo">VybzRoulette.</div>
+      <div className="logo footer-logo">
+        <img src={logoImg} alt="VybzRoulette" className="logo-img" />
+      </div>
       <p>&copy; {new Date().getFullYear()} VybzRoulette Ecosystem. All rights reserved.</p>
     </div>
   </footer>
