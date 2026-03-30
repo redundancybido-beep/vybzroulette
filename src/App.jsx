@@ -218,7 +218,8 @@ const Pricing = ({ pricing }) => (
       </div>
       <div className="pricing-grid">
         
-        {/* Tier 1 */}
+        {/* Tier 1 - Hidden per user request */}
+        {/*
         <div className="price-card">
           <div className="price-header">
             <h3>Hustler Stage</h3>
@@ -232,6 +233,7 @@ const Pricing = ({ pricing }) => (
           </ul>
           <button className="btn btn-secondary">Get Started</button>
         </div>
+        */}
 
         {/* Tier 2 */}
         <div className="price-card popular">
@@ -240,6 +242,7 @@ const Pricing = ({ pricing }) => (
             <h3 className="text-magenta">Global Superstar</h3>
             <p className="price-tier-sub">Command maximum USD</p>
             <div className="price-amount">{pricing.symbol}{pricing.superstar}<span>/mo</span></div>
+            <p className="price-billing">Billed quarterly</p>
           </div>  
           <ul className="price-features">
             <li><CheckCircle /> Premium Conversion-Optimized Themes</li>
@@ -251,7 +254,8 @@ const Pricing = ({ pricing }) => (
           <button className="btn btn-primary btn-pulse">Claim Superstar Status</button>
         </div>
 
-        {/* Tier 3 */}
+        {/* Tier 3 - Hidden per user request */}
+        {/*
         <div className="price-card">
           <div className="price-header">
             <h3>Agency / Management</h3>
@@ -266,6 +270,7 @@ const Pricing = ({ pricing }) => (
           </ul>
           <button className="btn btn-secondary">Contact Sales</button>
         </div>
+        */}
 
       </div>
     </div>
@@ -335,7 +340,7 @@ export default function App() {
   const [pricing, setPricing] = useState({
     symbol: '$',
     hustler: '19',
-    superstar: '49',
+    superstar: '15',
     agency: '199'
   });
 
@@ -353,7 +358,7 @@ export default function App() {
           setPricing({
             symbol: '₦',
             hustler: '30,000',
-            superstar: '75,000',
+            superstar: '15,000',
             agency: '300,000'
           });
         }

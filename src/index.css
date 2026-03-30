@@ -549,6 +549,16 @@ a {
   color: var(--text-secondary);
 }
 
+.price-billing {
+  font-size: 0.85rem;
+  color: var(--accent-magenta);
+  font-weight: 600;
+  margin-top: -8px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .price-features {
   list-style: none;
   margin-bottom: 40px;
