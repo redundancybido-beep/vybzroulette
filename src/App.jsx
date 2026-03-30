@@ -209,7 +209,7 @@ const Testimonials = () => (
   </section>
 );
 
-const Pricing = () => (
+const Pricing = ({ pricing }) => (
   <section className="section pricing" id="pricing">
     <div className="container">
       <div className="section-head">
@@ -223,7 +223,7 @@ const Pricing = () => (
           <div className="price-header">
             <h3>Hustler Stage</h3>
             <p className="price-tier-sub">For new talent</p>
-            <div className="price-amount">$19<span>/mo</span></div>
+            <div className="price-amount">{pricing.symbol}{pricing.hustler}<span>/mo</span></div>
           </div>
           <ul className="price-features">
             <li><CheckCircle /> 1 Custom WaaS Landing Page</li>
@@ -239,7 +239,7 @@ const Pricing = () => (
           <div className="price-header">
             <h3 className="text-magenta">Global Superstar</h3>
             <p className="price-tier-sub">Command maximum USD</p>
-            <div className="price-amount">$49<span>/mo</span></div>
+            <div className="price-amount">{pricing.symbol}{pricing.superstar}<span>/mo</span></div>
           </div>  
           <ul className="price-features">
             <li><CheckCircle /> Premium Conversion-Optimized Themes</li>
@@ -256,7 +256,7 @@ const Pricing = () => (
           <div className="price-header">
             <h3>Agency / Management</h3>
             <p className="price-tier-sub">For multiple talents</p>
-            <div className="price-amount">$199<span>/mo</span></div>
+            <div className="price-amount">{pricing.symbol}{pricing.agency}<span>/mo</span></div>
           </div>
           <ul className="price-features">
             <li><CheckCircle /> Up to 10 Creator Profiles</li>
@@ -332,12 +332,34 @@ const Footer = () => (
 
 export default function App() {
   const [showFloating, setShowFloating] = useState(false);
+  const [pricing, setPricing] = useState({
+    symbol: '$',
+    hustler: '19',
+    superstar: '49',
+    agency: '199'
+  });
 
   useEffect(() => {
     const handleScroll = () => {
       setShowFloating(window.scrollY > 500);
     };
     window.addEventListener('scroll', handleScroll);
+
+    // Geo-Detection Logic
+    fetch('https://api.country.is')
+      .then(res => res.json())
+      .then(data => {
+        if (data.country === 'NG') {
+          setPricing({
+            symbol: '₦',
+            hustler: '30,000',
+            superstar: '75,000',
+            agency: '300,000'
+          });
+        }
+      })
+      .catch(err => console.error('Geo-detection failed:', err));
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -351,7 +373,7 @@ export default function App() {
         <HowItWorks />
         <Testimonials />
         <Features />
-        <Pricing />
+        <Pricing pricing={pricing} />
         <UrgencyClose />
       </main>
       <Footer />
