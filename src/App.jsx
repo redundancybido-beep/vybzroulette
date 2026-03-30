@@ -15,7 +15,7 @@ const Navbar = () => (
   <nav className="navbar">
     <div className="container">
       <div className="logo text-gradient">VybzRoulette.</div>
-      <a href="#pricing" className="btn btn-primary btn-pulse" style={{ padding: '10px 24px', fontSize: '0.9rem' }}>
+      <a href="#pricing" className="btn btn-primary btn-pulse navbar-cta">
         Claim Stage <ArrowRight />
       </a>
     </div>
@@ -24,10 +24,10 @@ const Navbar = () => (
 
 const Hero = () => (
   <section className="hero container animate-fade-in">
-    <div className="revenue-badge" style={{ marginBottom: '24px' }}>
+    <div className="revenue-badge hero-badge">
       🌟 Join 247+ creators earning in USD today
     </div>
-    <h1 style={{ color: 'white' }}>
+    <h1>
       Stop Settling for local currency.
       <br />
       <span className="text-magenta">Command US Dollars.</span>
@@ -35,10 +35,10 @@ const Hero = () => (
     <p>
       The private digital stage that is elevating local talent into global superstars. Get a high-converting personal website that funnels international traffic directly to your Telegram paid channels. 
     </p>
-    <a href="#pricing" className="btn btn-primary btn-pulse" style={{ fontSize: '1.2rem', padding: '20px 40px' }}>
+    <a href="#pricing" className="btn btn-primary btn-pulse hero-cta">
       Claim My Global Stage Now <ArrowRight />
     </a>
-    <div style={{ marginTop: '20px', fontSize: '0.9rem', color: 'var(--text-secondary)' }}>
+    <div className="hero-sub">
       🔒 30-Day First USD Subscriber Guarantee • No coding required
     </div>
   </section>
@@ -54,7 +54,7 @@ const TrustBar = () => (
         <strong>🇺🇸 🇬🇧 🇦🇪</strong> Top Paying Audiences
       </div>
       <div className="trust-item">
-        <strong>100%</strong> Adult-Safe & Compliant
+        <strong>100%</strong> Adult-Safe &amp; Compliant
       </div>
       <div className="trust-item">
         <strong>24/7</strong> Automated Dollar Funnel
@@ -68,11 +68,11 @@ const Transformation = () => (
     <div className="container">
       <div className="section-head">
         <h2>The <span className="text-gradient">Transformation</span></h2>
-        <p>Your content has always been world-class. It’s time your bank account matched it.</p>
+        <p>Your content has always been world-class. It's time your bank account matched it.</p>
       </div>
       <div className="grid-2">
         <div className="card card-before">
-          <h3><span style={{color: 'red'}}>✕</span> The Local Struggle</h3>
+          <h3><span className="card-before-icon">✕</span> The Local Struggle</h3>
           <ul>
             <li>Relying on inconsistent Naira tips.</li>
             <li>Link-in-bios that look cheap and convert zero high-ticket subs.</li>
@@ -83,7 +83,7 @@ const Transformation = () => (
         <div className="card card-after">
           <h3><CheckCircle /> The Global Superstardom</h3>
           <ul>
-            <li>Wake up to $100-$500 weekly from US & EU subscribers.</li>
+            <li>Wake up to $100-$500 weekly from US &amp; EU subscribers.</li>
             <li>A premium, ultra-sleek personal brand hub that screams "luxury".</li>
             <li>Bulletproof Telegram funnels that nobody can ban.</li>
             <li>Instant status elevation: You are now an international artiste.</li>
@@ -95,7 +95,7 @@ const Transformation = () => (
 );
 
 const HowItWorks = () => (
-  <section className="section" style={{ background: 'var(--dark-bg)' }}>
+  <section className="section section-dark">
     <div className="container">
       <div className="section-head">
         <h2>Speed to <span className="text-gold">First USD</span></h2>
@@ -161,7 +161,7 @@ const Features = () => (
 );
 
 const Testimonials = () => (
-  <section className="section" style={{ background: 'var(--base-bg)' }}>
+  <section className="section section-base">
     <div className="container">
       <div className="section-head">
         <h2>They Claimed Their <span className="text-gradient">Stage</span></h2>
@@ -172,8 +172,8 @@ const Testimonials = () => (
           <div className="testi-header">
             <div className="avatar"></div>
             <div>
-              <h4 style={{color: 'white'}}>Amara T.</h4>
-              <div style={{fontSize: '0.8rem', color: 'var(--text-secondary)'}}>Content Creator</div>
+              <h4 className="testi-name">Amara T.</h4>
+              <div className="testi-role">Content Creator</div>
             </div>
           </div>
           <div className="revenue-badge">From ₦5k/day to $850/week</div>
@@ -183,8 +183,8 @@ const Testimonials = () => (
           <div className="testi-header">
             <div className="avatar"></div>
             <div>
-              <h4 style={{color: 'white'}}>David K.</h4>
-              <div style={{fontSize: '0.8rem', color: 'var(--text-secondary)'}}>Digital Entertainer</div>
+              <h4 className="testi-name">David K.</h4>
+              <div className="testi-role">Digital Entertainer</div>
             </div>
           </div>
           <div className="revenue-badge">Ranked Top 1% Global</div>
@@ -194,8 +194,8 @@ const Testimonials = () => (
           <div className="testi-header">
             <div className="avatar"></div>
             <div>
-              <h4 style={{color: 'white'}}>Sophie M.</h4>
-              <div style={{fontSize: '0.8rem', color: 'var(--text-secondary)'}}>Private Model</div>
+              <h4 className="testi-name">Sophie M.</h4>
+              <div className="testi-role">Private Model</div>
             </div>
           </div>
           <div className="revenue-badge">Crossed $5k Monthly</div>
@@ -219,7 +219,7 @@ const Pricing = () => (
         <div className="price-card">
           <div className="price-header">
             <h3>Hustler Stage</h3>
-            <p style={{color: 'var(--text-secondary)'}}>For new talent</p>
+            <p className="price-tier-sub">For new talent</p>
             <div className="price-amount">$19<span>/mo</span></div>
           </div>
           <ul className="price-features">
@@ -227,7 +227,7 @@ const Pricing = () => (
             <li><CheckCircle /> Standard Telegram Integration</li>
             <li><CheckCircle /> Basic Analytics</li>
           </ul>
-          <button className="btn" style={{ background: '#222', color: 'white' }}>Get Started</button>
+          <button className="btn btn-secondary">Get Started</button>
         </div>
 
         {/* Tier 2 */}
@@ -235,7 +235,7 @@ const Pricing = () => (
           <div className="popular-badge">MOST POPULAR • HIGH CONVERSION</div>
           <div className="price-header">
             <h3 className="text-magenta">Global Superstar</h3>
-            <p style={{color: 'var(--text-secondary)'}}>Command maximum USD</p>
+            <p className="price-tier-sub">Command maximum USD</p>
             <div className="price-amount">$49<span>/mo</span></div>
           </div>  
           <ul className="price-features">
@@ -252,7 +252,7 @@ const Pricing = () => (
         <div className="price-card">
           <div className="price-header">
             <h3>Agency / Management</h3>
-            <p style={{color: 'var(--text-secondary)'}}>For multiple talents</p>
+            <p className="price-tier-sub">For multiple talents</p>
             <div className="price-amount">$199<span>/mo</span></div>
           </div>
           <ul className="price-features">
@@ -261,18 +261,10 @@ const Pricing = () => (
             <li><CheckCircle /> Whitelabel Options</li>
             <li><CheckCircle /> Dedicated Account Manager</li>
           </ul>
-          <button className="btn" style={{ background: '#222', color: 'white' }}>Contact Sales</button>
+          <button className="btn btn-secondary">Contact Sales</button>
         </div>
 
       </div>
-      
-      {/* <div className="guarantee-box">
-        <h3 style={{ color: 'var(--accent-gold)', marginBottom: '10px' }}>Our Iron-Clad 30-Day Guarantee</h3>
-        <p style={{ color: 'var(--text-secondary)' }}>
-          "See Your First International Subs or Refund." If you set up your VybzRoulette stage and don't attract a paying international subscriber within 30 days, we'll refund every penny. You have nothing to lose, and a global empire to gain.
-        </p>
-      </div> */}
-
     </div>
   </section>
 );
@@ -294,29 +286,29 @@ const UrgencyClose = () => {
   }, []);
 
   return (
-    <section className="section" style={{ textAlign: 'center', background: 'var(--base-bg)', paddingBottom: '160px' }}>
+    <section className="section urgency-section">
       <div className="container">
-        <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)' }}>The Spotlight is <span className="text-magenta">Fading.</span></h2>
-        <p style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', maxWidth: '600px', margin: '20px auto 40px' }}>
+        <h2 className="urgency-heading">The Spotlight is <span className="text-magenta">Fading.</span></h2>
+        <p className="urgency-sub">
           Every day you wait is another day a lesser talent steals the dollar-paying audience that belongs to you. The founder pricing block is closing.
         </p>
-        <div style={{ display: 'inline-flex', gap: '20px', background: 'var(--dark-bg)', padding: '20px 40px', borderRadius: '16px', border: '1px solid rgba(255,0,170,0.3)', marginBottom: '40px' }}>
+        <div className="countdown-box">
           <div>
-            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--accent-magenta)' }}>
+            <div className="countdown-value">
               {String(timeLeft.minutes).padStart(2, '0')}
             </div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>MINUTES</div>
+            <div className="countdown-label">MINUTES</div>
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 'bold' }}>:</div>
+          <div className="countdown-separator">:</div>
           <div>
-            <div style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--accent-magenta)' }}>
+            <div className="countdown-value">
               {String(timeLeft.seconds).padStart(2, '0')}
             </div>
-            <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>SECONDS</div>
+            <div className="countdown-label">SECONDS</div>
           </div>
         </div>
         <br/>
-        <a href="#pricing" className="btn btn-primary" style={{ fontSize: '1.4rem', padding: '24px 48px', boxShadow: '0 0 50px rgba(255,0,170,0.4)' }}>
+        <a href="#pricing" className="btn btn-primary urgency-cta">
           Claim My Global Stage Now <ArrowRight />
         </a>
       </div>
@@ -327,13 +319,8 @@ const UrgencyClose = () => {
 const Footer = () => (
   <footer className="footer">
     <div className="container">
-      <div className="logo text-gradient" style={{ marginBottom: '20px' }}>VybzRoulette.</div>
+      <div className="logo text-gradient footer-logo">VybzRoulette.</div>
       <p>&copy; {new Date().getFullYear()} VybzRoulette Ecosystem. All rights reserved.</p>
-      {/* <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '20px' }}>
-        <a href="#" style={{ color: 'var(--text-secondary)' }}>Terms</a>
-        <a href="#" style={{ color: 'var(--text-secondary)' }}>Privacy</a>
-        <a href="#" style={{ color: 'var(--text-secondary)' }}>Contact</a>
-      </div> */}
     </div>
   </footer>
 );
@@ -365,8 +352,11 @@ export default function App() {
       <Footer />
       
       {/* Persistent Floating CTA */}
-      <div className={`floating-cta \${showFloating ? 'animate-fade-in' : ''}`} style={{ opacity: showFloating ? 1 : 0, transition: 'opacity 0.3s' }}>
-        <a href="#pricing" className="btn btn-primary btn-pulse" style={{ boxShadow: '0 10px 40px rgba(255,0,170,0.5)' }}>
+      <div
+        className="floating-cta"
+        style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
+      >
+        <a href="#pricing" className="btn btn-primary btn-pulse">
           Get Started <ArrowRight />
         </a>
       </div>
