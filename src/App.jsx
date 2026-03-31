@@ -405,7 +405,7 @@ export default function App() {
       </button>
 
       {/* Persistent Floating CTA (Bottom Right) */}
-      <div
+      {/* <div
         className="floating-cta"
         style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
       >
@@ -417,7 +417,7 @@ export default function App() {
         >
           Get Started <ArrowRight />
         </a>
-      </div>
+      </div> */}
     </>
   );
 }
