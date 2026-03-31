@@ -250,7 +250,6 @@ const Pricing = ({ pricing }) => (
             <li><CheckCircle /> Advanced Telegram Redirect Funnels</li>
             <li><CheckCircle /> Custom Domain (.com) Included</li>
             <li><CheckCircle /> Global SEO Booster</li>
-            <li><CheckCircle /> Priority 24/7 Support</li>
           </ul>
           <a 
             href="https://t.me/SonOfanOG?text=Please%20sign%20me%20up%20for%20my%20Premium%20Branded%20Professional%20Website" 
@@ -263,23 +262,31 @@ const Pricing = ({ pricing }) => (
           </a>
         </div>
 
-        {/* Tier 3 - Hidden per user request */}
-        {/*
-        <div className="price-card">
+        {/* Tier 3*/}
+        
+        {/* <div className="price-card">.
           <div className="price-header">
-            <h3>Agency / Management</h3>
-            <p className="price-tier-sub">For multiple talents</p>
+            <h3>Diamond Agency Management</h3>
+            <p className="price-tier-sub">For Seasoned Superstar Creators</p>
             <div className="price-amount">{pricing.symbol}{pricing.agency}<span>/mo</span></div>
           </div>
           <ul className="price-features">
-            <li><CheckCircle /> Up to 10 Creator Profiles</li>
+            <li><CheckCircle /> Fully Customized Website</li>
             <li><CheckCircle /> Aggregated Revenue Dashboard</li>
-            <li><CheckCircle /> Whitelabel Options</li>
-            <li><CheckCircle /> Dedicated Account Manager</li>
+            <li><CheckCircle /> Cloud Hosting and Backup Services</li>
+            <li><CheckCircle /> Priority 24/7 Support</li>
           </ul>
-          <button className="btn btn-secondary">Contact Sales</button>
-        </div>
-        */}
+          <a 
+            href="https://t.me/SonOfanOG?text=Please%20sign%20me%20up%20for%20my%20Diamond%20Agency%20Management%20Website" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-secondary"
+            style={{ textDecoration: 'none', display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}
+          >
+            Contact Sales
+          </a>
+        </div> */}
+       
 
       </div>
     </div>
