@@ -215,7 +215,7 @@ const Pricing = ({ pricing }) => (
     <div className="container">
       <div className="section-head">
         <h2>Unfair <span className="text-magenta">Advantage</span></h2>
-        <p>Founder pricing limited to the first 50 creators. 37 spots currently filled.</p>
+        <p>Founder pricing limited to the next 50 creators. 37 spots currently filled.</p>
       </div>
       <div className="pricing-grid">
         
@@ -394,7 +394,7 @@ export default function App() {
       </main>
       <Footer />
 
-      {/* Floating Scroll to Top (Bottom Left) */}
+      {/* Floating Scroll to Top (Bottom Right) */}
       <button
         className="scroll-top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -403,21 +403,6 @@ export default function App() {
       >
         <ChevronUp />
       </button>
-
-      {/* Persistent Floating CTA (Bottom Right) */}
-      {/* <div
-        className="floating-cta"
-        style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
-      >
-        <a 
-          href="https://t.me/SonOfanOG?text=Please%20sign%20me%20up%20for%20my%20Premium%20Branded%20Professional%20Website" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="btn btn-primary btn-pulse"
-        >
-          Get Started <ArrowRight />
-        </a>
-      </div> */}
     </>
   );
 }
