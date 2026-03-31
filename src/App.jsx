@@ -9,6 +9,7 @@ const Zap = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" st
 const Shield = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>;
 const ArrowRight = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>;
 const DollarSign = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>;
+const ChevronUp = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>;
 
 // --- Components ---
 
@@ -41,9 +42,9 @@ const Hero = () => (
     <a href="#pricing" className="btn btn-primary btn-pulse hero-cta">
       Claim My Global Stage Now <ArrowRight />
     </a>
-    <div className="hero-sub">
+    {/* <div className="hero-sub">
       🔒 30-Day First USD Subscriber Guarantee • No coding required
-    </div>
+    </div> */}
   </section>
 );
 
@@ -392,16 +393,31 @@ export default function App() {
         <UrgencyClose />
       </main>
       <Footer />
-      
-      {/* Persistent Floating CTA */}
-      {/* <div
+
+      {/* Floating Scroll to Top (Bottom Left) */}
+      <button
+        className="scroll-top"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
+        aria-label="Scroll to top"
+      >
+        <ChevronUp />
+      </button>
+
+      {/* Persistent Floating CTA (Bottom Right) */}
+      <div
         className="floating-cta"
         style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
       >
-        <a href="#pricing" className="btn btn-primary btn-pulse">
+        <a 
+          href="https://t.me/SonOfanOG?text=Please%20sign%20me%20up%20for%20my%20Premium%20Branded%20Professional%20Website" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="btn btn-primary btn-pulse"
+        >
           Get Started <ArrowRight />
         </a>
-      </div> */}
+      </div>
     </>
   );
 }
