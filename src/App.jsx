@@ -31,9 +31,8 @@ const Hero = () => (
       🌟 Join 247+ creators earning in USD today
     </div>
     <h1>
-      Grab your own professionally branded website now. 
+      Grab your own professionally branded website now and stop settling for local currency.
       <br />
-      Stop Settling for local currency.
       <span className="text-magenta">Command US Dollars.</span>
     </h1>
     <p>
