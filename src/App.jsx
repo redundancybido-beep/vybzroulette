@@ -384,14 +384,14 @@ export default function App() {
       <Footer />
       
       {/* Persistent Floating CTA */}
-      <div
+      {/* <div
         className="floating-cta"
         style={{ opacity: showFloating ? 1 : 0, pointerEvents: showFloating ? 'auto' : 'none' }}
       >
         <a href="#pricing" className="btn btn-primary btn-pulse">
           Get Started <ArrowRight />
         </a>
-      </div>
+      </div> */}
     </>
   );
 }
