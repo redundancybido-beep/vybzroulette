@@ -242,7 +242,7 @@ const Pricing = ({ pricing }) => (
             <h3 className="text-magenta">Global Superstar</h3>
             <p className="price-tier-sub">Command maximum USD</p>
             <div className="price-amount">{pricing.symbol}{pricing.superstar}<span>/mo</span></div>
-            <p className="price-billing">Billed quarterly</p>
+            <p className="price-billing">Billed quarterly (Every 3 months) — {pricing.symbol}{pricing.superstarTotal} total</p>
           </div>  
           <ul className="price-features">
             <li><CheckCircle /> Premium Conversion-Optimized Themes</li>
@@ -251,7 +251,15 @@ const Pricing = ({ pricing }) => (
             <li><CheckCircle /> Global SEO Booster</li>
             <li><CheckCircle /> Priority 24/7 Support</li>
           </ul>
-          <button className="btn btn-primary btn-pulse">Claim Superstar Status</button>
+          <a 
+            href="https://t.me/SonOfanOG?text=Please%20sign%20me%20up%20for%20my%20Premium%20Branded%20Professional%20Website" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-primary btn-pulse"
+            style={{ textDecoration: 'none', display: 'inline-flex', justifyContent: 'center', alignItems: 'center' }}
+          >
+            Claim Superstar Status
+          </a>
         </div>
 
         {/* Tier 3 - Hidden per user request */}
@@ -341,6 +349,7 @@ export default function App() {
     symbol: '$',
     hustler: '19',
     superstar: '15',
+    superstarTotal: '45',
     agency: '199'
   });
 
@@ -359,6 +368,7 @@ export default function App() {
             symbol: '₦',
             hustler: '30,000',
             superstar: '15,000',
+            superstarTotal: '45,000',
             agency: '300,000'
           });
         }
