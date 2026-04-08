@@ -1,0 +1,6 @@
+.footer { padding: 48px 0; border-top: 1px solid var(--border-subtle); text-align: center; color: var(--text-tertiary); font-size: 0.85rem; background: var(--base-bg); }
+.footer-logo { margin-bottom: 16px; display: flex; justify-content: center; }
+.footer-logo .logo-img { height: 44px; opacity: 0.6; }
+.footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+.footer-links a { color: var(--text-secondary); font-size: 0.82rem; transition: color var(--transition-base); }
+.footer-links a:hover { color: var(--accent-magenta); }
