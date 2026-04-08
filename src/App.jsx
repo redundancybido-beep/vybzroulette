@@ -166,7 +166,8 @@ function Hero() {
         </div>
 
         <h1>
-          Grab your own world-class website<br />
+          Grab your very own<br />
+          world-class website<br />
           <span className="text-gradient">on the global stage.</span>
         </h1>
 
@@ -513,7 +514,7 @@ function Pricing({ pricing }) {
                   <span className="period">/mo</span>
                 </div>
               </div>
-              <p className="price-billing">Billed quarterly — {pricing.symbol}{pricing.risingStarTotal} total</p>
+              <p className="price-billing">Billed monthly</p>
               <ul className="price-features">
                 <li><IconCheck size={18} /> 1 Premium Branded Landing Page</li>
                 <li><IconCheck size={18} /> Standard Telegram Integration</li>
@@ -543,7 +544,7 @@ function Pricing({ pricing }) {
                   <span className="period">/mo</span>
                 </div>
               </div>
-              <p className="price-billing">Billed quarterly — {pricing.symbol}{pricing.superstarTotal} total</p>
+              <p className="price-billing">Billed monthly</p>
               <ul className="price-features">
                 <li><IconCheck size={18} /> Premium Conversion-Optimized Themes</li>
                 <li><IconCheck size={18} /> Advanced Telegram Redirect Funnels</li>
@@ -802,10 +803,8 @@ export default function App() {
   const [demoOpen, setDemoOpen] = useState(false);
   const [pricing, setPricing] = useState({
     symbol: '$',
-    risingStar: '29',
-    risingStarTotal: '87',
-    superstar: '49',
-    superstarTotal: '147',
+    risingStar: '15',
+    superstar: '60',
   });
 
   useEffect(() => {
@@ -822,10 +821,8 @@ export default function App() {
         if (data.country === 'NG') {
           setPricing({
             symbol: '₦',
-            risingStar: '25,000',
-            risingStarTotal: '75,000',
-            superstar: '15,000',
-            superstarTotal: '45,000',
+            risingStar: '15,000',
+            superstar: '75,000',
           });
         }
       })
