@@ -29,7 +29,7 @@
 }
 
 .logo-img {
-  height: clamp(50px, 8vw, 70px);
+  height: clamp(60px, 10vw, 90px);
   width: auto;
   display: block;
 }

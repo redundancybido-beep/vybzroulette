@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.15; font-weight: 700; letter-spacing: -0
   .section-head p { font-size: 1rem; }
 
   .navbar { padding: 12px 0; }
-  .logo-img { height: 46px; }
+  .logo-img { height: 56px; }
   .navbar-cta { padding: 8px 16px; font-size: 0.78rem; gap: 6px; }
 
   .hero { min-height: auto; padding: 120px 20px 72px; }
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.15; font-weight: 700; letter-spacing: -0
   .section-head h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); word-break: break-word; }
 
   .navbar { padding: 10px 0; }
-  .logo-img { height: 36px; }
+  .logo-img { height: 44px; }
   .navbar-cta { padding: 7px 12px; font-size: 0.72rem; gap: 4px; }
   .btn-outline.navbar-cta { display: none; }
 
