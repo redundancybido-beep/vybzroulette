@@ -83,5 +83,12 @@
 .transform-card--after li svg { color: var(--accent-magenta); }
 
 @media (max-width: 768px) {
-  .transform-grid { grid-template-columns: 1fr; }
+  .transform-grid { 
+    grid-template-columns: 1fr; 
+    gap: 48px; /* Room for the arrow */
+  }
+  .transform-grid::before {
+    content: '↓';
+    top: 50%;
+  }
 }
