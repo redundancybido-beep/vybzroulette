@@ -37,7 +37,7 @@
 }
 
 .transform-card:hover { border-color: var(--border-accent); }
-.transform-card--before { opacity: 0.85; }
+.visible.transform-card--before { opacity: 0.85; }
 
 .transform-card--after {
   border-color: var(--border-accent);

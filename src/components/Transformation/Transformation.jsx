@@ -5,7 +5,6 @@ import useScrollReveal from '../../hooks/useScrollReveal';
 import './Transformation.css';
 
 export default function Transformation() {
-  const ref = useScrollReveal();
 
   return (
     <section className="section transformation" id="transformation">
@@ -17,8 +16,8 @@ export default function Transformation() {
           </div>
         </RevealSection>
 
-        <div className="transform-grid" ref={ref}>
-          <div className="transform-card transform-card--before reveal-left">
+        <div className="transform-grid">
+          <RevealSection direction="left" className="transform-card transform-card--before">
             <div className="transform-card__label">✕ Where You Are Now</div>
             <h3>Playing Small</h3>
             <ul>
@@ -27,9 +26,9 @@ export default function Transformation() {
               <li><IconX size={16} /> Living in constant fear of platform bans destroying your entire business overnight.</li>
               <li><IconX size={16} /> Stuck competing with millions locally for attention that pays in pennies.</li>
             </ul>
-          </div>
+          </RevealSection>
 
-          <div className="transform-card transform-card--after reveal-right">
+          <RevealSection direction="right" className="transform-card transform-card--after">
             <div className="transform-card__label">✦ Where VybzRoulette Takes You</div>
             <h3>Commanding the Global Stage</h3>
             <ul>
@@ -38,7 +37,7 @@ export default function Transformation() {
               <li><IconCheck /> Bulletproof infrastructure that nobody can ban — your stage, forever.</li>
               <li><IconCheck /> Instant status elevation: you become the international name people pay to access.</li>
             </ul>
-          </div>
+          </RevealSection>
         </div>
       </div>
     </section>
