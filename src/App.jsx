@@ -166,24 +166,25 @@ function Hero() {
         </div>
 
         <h1>
-          Your world-class talent deserves<br />
-          <span className="text-gradient">a world-class stage.</span>
+          Grab your own world-class website<br />
+          <span className="text-gradient">on the global stage.</span>
         </h1>
 
         <p className="hero-sub">
-          VybzRoulette is the private digital stage that instantly elevates elite 
-          creators from respected local names to internationally recognized superstars — 
-          with a sleek, high-converting personal website that commands USD from 
-          premium audiences worldwide.
+          Instantly elevate your brand as an elite creator and 
+          upgrade from local to respected internationally recognized 
+          superstar with a sleek, high-converting personal 
+          website reaching premium audiences worldwide - 
+          funneling traffic directly to your private Telegram channel.
         </p>
 
         <div className="hero-cta-group">
           <a href="#pricing" className="btn btn-primary btn-pulse hero-cta" id="hero-cta">
-            Claim Your Global Stage <IconArrowRight />
+            Claim Your Global Stage Now <IconArrowRight />
           </a>
           <div className="hero-guarantee">
             <IconLock size={14} />
-            <span>Performance Guarantee · Live in 48hrs</span>
+            <span>Performance Guarantee · Go Live in 48hrs</span>
           </div>
         </div>
       </div>
@@ -230,7 +231,7 @@ function Transformation() {
         <RevealSection>
           <div className="section-head">
             <h2>The <span className="text-gradient">Elevation</span></h2>
-            <p>Your content has always been world-class. It's time your positioning, revenue, and global recognition matched it.</p>
+            <p>Your content has always been world-class. It's time your positioning, bank account, and global recognition matched it.</p>
           </div>
         </RevealSection>
 
@@ -255,7 +256,7 @@ function Transformation() {
               </li>
               <li>
                 <IconX size={16} />
-                Competing with millions locally for attention that pays in pennies.
+                Stuck competing with millions locally for attention that pays in pennies.
               </li>
             </ul>
           </div>
