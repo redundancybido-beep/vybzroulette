@@ -12,7 +12,7 @@ export default function Transformation() {
       <div className="container">
         <RevealSection>
           <div className="section-head">
-            <h2>The <span className="text-gradient">Elevation</span></h2>
+            <h2>The <span className="text-gradient">Transformation</span></h2>
             <p>Your content has always been world-class. It's time your positioning, bank account, and global recognition matched it.</p>
           </div>
         </RevealSection>
@@ -33,7 +33,7 @@ export default function Transformation() {
             <div className="transform-card__label">✦ Where VybzRoulette Takes You</div>
             <h3>Commanding the Global Stage</h3>
             <ul>
-              <li><IconCheck /> Wake up to $500–$2,000+ weekly from US, UK, and EU premium subscribers.</li>
+              <li><IconCheck /> Expand your horizon - gain exposure to US, UK, EU and UAE based premium subscribers.</li>
               <li><IconCheck /> An ultra-sleek personal brand hub that immediately signals luxury and status.</li>
               <li><IconCheck /> Bulletproof infrastructure that nobody can ban — your stage, forever.</li>
               <li><IconCheck /> Instant status elevation: you become the international name people pay to access.</li>
