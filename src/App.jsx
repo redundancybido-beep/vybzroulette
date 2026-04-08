@@ -83,7 +83,7 @@ export default function App() {
       <Footer />
 
       {/* Floating Elements */}
-      <FloatingCtaBar visible={showFloating} />
+      {/* <FloatingCtaBar visible={showFloating} /> */}
 
       <button
         className="scroll-top"
