@@ -34,3 +34,12 @@
 
 .step-card h3 { font-size: 1.15rem; margin-bottom: 12px; font-weight: 700; }
 .step-card p { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .steps-grid::before { display: none; }
+}
+
+@media (max-width: 480px) {
+  .steps-grid { grid-template-columns: 1fr; }
+}

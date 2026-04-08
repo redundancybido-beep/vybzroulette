@@ -35,3 +35,7 @@
 
 .testi-info h4 { font-size: 0.95rem; font-weight: 700; }
 .testi-info span { font-size: 0.8rem; color: var(--text-secondary); }
+
+@media (max-width: 768px) {
+  .testimonials-grid { grid-template-columns: 1fr; }
+}

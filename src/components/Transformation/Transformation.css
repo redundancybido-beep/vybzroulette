@@ -81,3 +81,7 @@
 .transform-card li svg { flex-shrink: 0; margin-top: 2px; }
 .transform-card--before li svg { color: #FF4444; }
 .transform-card--after li svg { color: var(--accent-magenta); }
+
+@media (max-width: 768px) {
+  .transform-grid { grid-template-columns: 1fr; }
+}

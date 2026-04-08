@@ -30,3 +30,7 @@
   margin-top: 12px; font-size: 0.82rem; color: var(--accent-gold);
   font-weight: 600; display: flex; align-items: center; gap: 6px;
 }
+
+@media (max-width: 768px) {
+  .features-grid { grid-template-columns: 1fr; }
+}
