@@ -29,8 +29,8 @@ export default function App() {
   const [demoOpen, setDemoOpen] = useState(false);
   const [pricing, setPricing] = useState({
     symbol: '$',
-    risingStar: '15',
-    risingStarTotal: '45',
+    risingStar: '20',
+    risingStarTotal: '60',
     superstar: '60',
     superstarTotal: '180',
   });
@@ -53,8 +53,8 @@ export default function App() {
         if (data.country === 'NG') {
           setPricing({
             symbol: '₦',
-            risingStar: '15,000',
-            risingStarTotal: '45,000',
+            risingStar: '25,000',
+            risingStarTotal: '75,000',
             superstar: '75,000',
             superstarTotal: '225,000',
           });
