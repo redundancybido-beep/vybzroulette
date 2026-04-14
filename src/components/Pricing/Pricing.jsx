@@ -36,7 +36,6 @@ export default function Pricing({ pricing, visibleTier }) {
                   <li><IconCheck size={18} /> Custom Domain (.com) Included</li>
                   <li><IconCheck size={18} /> 1 Premium Branded Landing Page</li>
                   <li><IconCheck size={18} /> Standard Telegram Integration</li>
-                  <li><IconCheck size={18} /> Basic Analytics Dashboard</li>
                   <li><IconCheck size={18} /> Mobile-Optimized Design</li>
                 </ul>
                 <a href="https://t.me/SonOfanOG?text=I%20want%20to%20claim%20my%20Rising%20Star%20VybzRoulette%20stage" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
@@ -50,7 +49,7 @@ export default function Pricing({ pricing, visibleTier }) {
                 <div className="featured-badge">Most Popular · Highest ROI</div>
                 <div className="price-tier">Maximum Impact</div>
                 <div className="price-name">Global Superstar</div>
-                <p className="price-tagline">Command maximum USD revenue</p>
+                <p className="price-tagline">Command Premium Luxury Branding for Maximum USD Revenue</p>
                 <div className="price-amount-wrap">
                   <div className="price-amount">
                     <span className="currency">{pricing.symbol}</span>
