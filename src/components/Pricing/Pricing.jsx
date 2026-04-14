@@ -33,6 +33,7 @@ export default function Pricing({ pricing, visibleTier }) {
                 </div>
                 <p className="price-billing">Billed quarterly — {pricing.symbol}{pricing.risingStarTotal} total</p>
                 <ul className="price-features">
+                  <li><IconCheck size={18} /> Custom Domain (.com) Included</li>
                   <li><IconCheck size={18} /> 1 Premium Branded Landing Page</li>
                   <li><IconCheck size={18} /> Standard Telegram Integration</li>
                   <li><IconCheck size={18} /> Basic Analytics Dashboard</li>
@@ -59,9 +60,9 @@ export default function Pricing({ pricing, visibleTier }) {
                 </div>
                 <p className="price-billing">Billed quarterly — {pricing.symbol}{pricing.superstarTotal} total</p>
                 <ul className="price-features">
+                  <li><IconCheck size={18} /> Custom Domain (.vip) Included</li>
                   <li><IconCheck size={18} /> Premium Conversion-Optimized Themes</li>
                   <li><IconCheck size={18} /> Advanced Telegram Redirect Funnels</li>
-                  <li><IconCheck size={18} /> Custom Domain (.com) Included</li>
                   <li><IconCheck size={18} /> Global SEO Booster</li>
                   <li><IconCheck size={18} /> Dollar-Tracking Analytics</li>
                   <li><IconCheck size={18} /> Priority 48hr Deployment</li>
